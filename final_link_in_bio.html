@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iamCHIEF313 | Music &amp; Merch</title>
+    <style>
+        /* Base styles */
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0a0a0a;
+            color: #f5f5f5;
+            line-height: 1.5;
+        }
+        header {
+            background: linear-gradient(135deg, #000000 0%, #1c1c1c 100%);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 3px;
+            font-weight: bold;
+        }
+        header p {
+            margin-top: 0.5rem;
+            font-size: 1rem;
+            opacity: 0.75;
+        }
+        /* Cinematic CTA */
+        .cta-hero {
+            position: relative;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 1rem;
+            background: url('cinematic-placeholder.jpg') center/cover no-repeat;
+        }
+        .cta-hero::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.55);
+        }
+        .cta-hero h2 {
+            position: relative;
+            font-size: 2rem;
+            letter-spacing: 1px;
+            margin: 0 0 1rem 0;
+            z-index: 1;
+        }
+        .cta-hero a.cta-btn {
+            position: relative;
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            background-color: #d32f2f;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            z-index: 1;
+            transition: opacity 0.3s;
+        }
+        .cta-hero a.cta-btn:hover {
+            opacity: 0.85;
+        }
+        /* Songs section */
+        .songs {
+            max-width: 920px;
+            margin: 3rem auto;
+            padding: 0 1rem;
+        }
+        .song-card {
+            display: flex;
+            flex-direction: row;
+            background-color: #181818;
+            border-radius: 8px;
+            overflow: hidden;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+        .song-card img.cover {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+        }
+        .song-card .info {
+            flex: 1;
+            padding: 1.25rem;
+        }
+        .song-card h3 {
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+        .song-card p.description {
+            margin: 0 0 0.75rem 0;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+        .song-card audio {
+            width: 100%;
+            margin-top: 0.75rem;
+        }
+        .song-card .actions {
+            margin-top: 0.75rem;
+        }
+        .song-card .actions a.btn {
+            display: inline-block;
+            margin-right: 0.5rem;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            color: #fff;
+            text-decoration: none;
+            background-color: #007acc;
+            font-size: 0.9rem;
+            transition: opacity 0.3s;
+        }
+        .song-card .actions a.btn.buy-bundle {
+            background-color: #28a745;
+        }
+        .song-card .actions a.btn:hover {
+            opacity: 0.85;
+        }
+        /* Bundle section */
+        .bundle {
+            max-width: 920px;
+            margin: 0 auto 3rem auto;
+            padding: 2rem 1rem;
+            background-color: #202020;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+        .bundle h3 {
+            margin-top: 0;
+            font-size: 2rem;
+        }
+        .bundle p {
+            margin: 0.5rem 0 1.25rem;
+            opacity: 0.9;
+        }
+        .bundle a.btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            border-radius: 4px;
+            background-color: #e67e22;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: opacity 0.3s;
+        }
+        .bundle a.btn:hover {
+            opacity: 0.85;
+        }
+        /* Footer */
+        footer {
+            background-color: #111111;
+            color: #777;
+            text-align: center;
+            padding: 1.25rem 1rem;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>iamCHIEF313</h1>
+    <p>Official Music Releases &amp; Merch</p>
+</header>
+
+<!-- Cinematic YouTube Call‑to‑Action -->
+<section class="cta-hero">
+    <h2>Experience the Vision</h2>
+    <!-- Replace the link below with your actual YouTube video or channel URL -->
+    <a href="https://www.youtube.com/" class="cta-btn" target="_blank" rel="noopener">WATCH ON YOUTUBE</a>
+</section>
+
+<!-- Song releases -->
+<div class="songs">
+    <!-- Song 1 -->
+    <div class="song-card">
+        <!-- Replace src with the actual cover image file (e.g., imabusiness-cover.jpg) -->
+        <img src="imabusiness-cover.jpg" alt="'Ima 'Bout My Business Cover" class="cover">
+        <div class="info">
+            <h3>I’ma ’Bout My Business</h3>
+            <p class="description">Single by iamCHIEF313</p>
+            <!-- Replace src with the actual audio file for preview -->
+            <audio controls>
+                <source src="imabusiness-preview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="actions">
+                <!-- PayPal invoice link for this single -->
+                <a href="https://www.paypal.com/invoice/p/#VA8FFF2WRT9N4WDV" class="btn" target="_blank" rel="noopener">Buy $1.29</a>
+                <!-- Optionally link to the music video or YouTube clip for this song -->
+                <a href="https://www.youtube.com/" class="btn" target="_blank" rel="noopener">Watch Video</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Song 2 -->
+    <div class="song-card">
+        <img src="levelup-cover.jpg" alt="Level Up Cover" class="cover">
+        <div class="info">
+            <h3>Level Up</h3>
+            <p class="description">Single by iamCHIEF313</p>
+            <audio controls>
+                <source src="levelup-preview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="actions">
+                <a href="https://www.paypal.com/invoice/p/#4M9WNYMC4BAL2XJ8" class="btn" target="_blank" rel="noopener">Buy $1.29</a>
+                <a href="https://www.youtube.com/" class="btn" target="_blank" rel="noopener">Watch Video</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Song 3 -->
+    <div class="song-card">
+        <img src="nomattermyage-cover.jpg" alt="No Matter My Age Cover" class="cover">
+        <div class="info">
+            <h3>No Matter My Age</h3>
+            <p class="description">Single by iamCHIEF313</p>
+            <audio controls>
+                <source src="nomattermyage-preview.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <div class="actions">
+                <a href="https://www.paypal.com/invoice/p/#JBB4MTDDEUDTYSKJ" class="btn" target="_blank" rel="noopener">Buy $1.29</a>
+                <a href="https://www.youtube.com/" class="btn" target="_blank" rel="noopener">Watch Video</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bundle special -->
+<div class="bundle">
+    <h3>Get All Three Tracks</h3>
+    <p>Special bundle price available now – only $2.99</p>
+    <a href="https://www.paypal.com/invoice/p/#ZUX6JXSBZZNQDNNR" class="btn" target="_blank" rel="noopener">Buy All 3</a>
+</div>
+
+<footer>
+    &copy; 2026 iamCHIEF313. All rights reserved.
+</footer>
+
+</body>
+</html>
